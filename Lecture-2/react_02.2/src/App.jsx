@@ -5,7 +5,7 @@ function App(){
   return(
     <div>
       <h1>Swagat nhi kroge humara...</h1>
-      
+
       <Cat />
       <Dog />
       {/* <Dog></Dog>  */}
