@@ -32,18 +32,22 @@
 // ------------------------
 
 // import { Golden, Div, Pitbull } from "./components/Dog"
-import Golden, { Div, Pitbull } from "./components/Dog"
-import Pig from "./components/Pig"
-import Cat from "./components/cat"
+// import Golden, { Div, Pitbull } from "./components/Dog"
+import Person from "./components/Person"
+// import Pig from "./components/Pig"
+// import Cat from "./components/cat"
 
 function App() {
   return (
     <div>
-      <Golden />
+      <Person name="Sam" age={12} favColor="blue" />
+      <Person name="Sana" age={2} favColor="brown" />
+      <Person name="Deepak" age={4} favColor="green" />
+      {/* <Golden />
       <Div/>
       <Pitbull />
       <Cat />
-      <Pig />
+      <Pig /> */}
     </div>
   )
 }
