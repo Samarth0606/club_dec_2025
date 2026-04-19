@@ -11,13 +11,13 @@ function App() {
       <Person 
         naam="SAM" 
         umar={10} 
-        isMale={true} 
+        // isMale={true} 
         insta="code_baithak"
       />
       <Person 
         naam="MAV" 
         umar={5} 
-        isMale={true} 
+        // isMale={true} 
         insta="mee_maverick"
       />
       {/* <Cat />
