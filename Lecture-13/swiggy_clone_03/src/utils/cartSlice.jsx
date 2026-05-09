@@ -6,19 +6,19 @@ export const cartSlice = createSlice({
     items:[]
   },
   reducers: {
-    addItem: (state) => {
-      
+    addItem: (state, action) => {
+      state.items.push(action.payload)
     },
     removeItem: (state) => {
-      
+      state.items.pop()
     },
-    clearCart: (state, action) => {
-     
+    clearCart: (state) => {
+     state.items.length = 0
     },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = cartSlice.actions
+export const { addItem, removeItem, clearCart } = cartSlice.actions
 
 export default cartSlice.reducer
