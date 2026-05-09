@@ -14,7 +14,11 @@ function RestaurantDetails() {
             setFoodDetailsItem(resp.data.data.cards[5].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards)
         }
         calling();
-    }, [])
+    }, [idd])
+
+    function handleAddItem(foodItem){
+
+    }
     
     return(
         <div>

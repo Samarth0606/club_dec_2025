@@ -4,16 +4,20 @@ import Body from './components/Body'
 import Footer from './components/Footer'
 import ApiCalling from './components/ApiCalling'
 import { Outlet } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import appStore from './utils/appStore'
 
 function App() {
   return (
-    <div>
-      {/* <ApiCalling /> */}
-      <Header />
-      {/* <Body /> */}
-      <Outlet />
-      <Footer />
-    </div>
+    <Provider store={appStore}>
+      <div>
+        {/* <ApiCalling /> */}
+        <Header />
+        {/* <Body /> */}
+        <Outlet />
+        <Footer />
+      </div>
+    </Provider>
   )
 }
 
