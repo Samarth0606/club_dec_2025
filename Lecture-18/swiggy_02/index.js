@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const restaurantRoutes = require('./routes/restaurant.routes')
+const userRoutes = require('./routes/user.routes')
 
 mongoose.connect('mongodb+srv://samarthvohraindia_db_user:L63bjsfKotl7tdmA@cluster0.ooa8pji.mongodb.net/?appName=Cluster0')
 .then(()=>console.log(`DB IS CONNECTED`) )
@@ -14,6 +15,7 @@ app.get('/' , (req,res)=>{
 })
 
 restaurantRoutes(app)
+userRoutes(app)
 
 const PORT = 8080;
 app.listen(PORT , ()=>{
